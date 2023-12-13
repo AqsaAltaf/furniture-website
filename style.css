@@ -22,7 +22,7 @@
   justify-content: end;
   align-items: center;
   text-decoration: none;
-  padding-left: 5%;
+   
   padding-left: 5%;
   width: 100%;
   height: 100%;
@@ -33,6 +33,10 @@
 }
 .nav-link {
   color: white;
+}
+button .navbar-toggler:hover{
+  border: none;
+  text-decoration: none;
 }
 .dropdown-item:hover {
   background-color: brown !important;
@@ -119,7 +123,7 @@
 
 .slideshow-container {
   width: 100%;
-  height: 340px;
+  height: 250px;
   margin-top: 10px;
   position: relative;
   overflow: hidden;
