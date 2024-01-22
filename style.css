@@ -388,8 +388,9 @@ h2 {
   cursor: pointer;
 }
 .rooms-furniture .container-fluid .row .room-type .room-details {
-  width: 30%;
+  width: 45%;
   height: 100%;
+  text-wrap:balance;
 }
 .rooms-furniture .container-fluid .row .room-type .room-images img {
   width: 100%;
