@@ -45,8 +45,7 @@
 .card:hover{
   cursor: pointer;
   display: block;
-  box-shadow: 5px 5px 5px 8px #aaaaaa;
-
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
  
 .card-img {
@@ -63,7 +62,7 @@
 }
 
 .bg-cart:hover {
-  color: #fff;
+  color: #cfb2b2;
 }
 
 .bg-buy {
@@ -72,9 +71,13 @@
   padding-right: 29px;
 }
 .bg-buy:hover {
-  color: #fff;
+  color: #141313;
+  display: block;
 }
 
 a {
   text-decoration: none !important;
+}
+.card-body:hover{
+  color: #141313;
 }
