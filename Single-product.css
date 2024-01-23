@@ -2,10 +2,13 @@
     width: 100%;
     padding: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+    display: flex;
+    flex-direction: column;
 }
   .img-discription {
     width: 100%;
     display: flex;
+    flex-direction: column;
      
   }
   .p-discription {
