@@ -102,11 +102,12 @@ button .navbar-toggler:hover{
 }
 .account-wishlist-basket span {
   margin-left: 30px;
-
   color: black;
+  cursor: pointer;
 }
 .account-wishlist-basket span:hover {
   text-decoration: none;
+  
 }
 /* Menu items at menu bar */
 .navbar-nav {
