@@ -29,7 +29,116 @@
     <script src="Header.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <style></style>
+  <style>
+    
+ 
+
+    .card.p-3{
+      border: none;
+      background-color: #3318ad;
+    }
+    .card.p-3:hover{
+        background-color:#3318ad;
+        text-decoration: none;
+    }
+    .form-control {
+      border-bottom: 2px solid #eee !important;
+      border: none;
+      font-weight: 600;
+    }
+
+    .form-control:focus {
+       
+      background-color: #3318ad;
+      border-color: #8bbafe;
+      outline: 0;
+      box-shadow: none;
+      border-radius: 0px;
+      border-bottom: 2px solid blue !important;
+    }
+
+    .inputbox {
+      position: relative;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .inputbox span {
+      position: absolute;
+      top: 7px;
+      left: 11px;
+      transition: 0.5s;
+      color: black;
+    }
+     
+
+    .inputbox i {
+      position: absolute;
+      top: 13px;
+      right: 8px;
+      transition: 0.5s;
+      color: #3f51b5;
+    }
+
+    h6{
+        color: #fdcc49;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .inputbox input:focus ~ span {
+      transform: translateX(0px) translateY(-30px);
+      font-size: 14px;
+      color: white;
+    }
+
+    .inputbox input:valid ~ span {
+      transform: translateX(-0px) translateY(-30px);
+      font-size: 14px;
+    }
+
+    .card-blue {
+      background-color: #4526c0;
+    }
+
+    .hightlight {
+      background-color: #5737d9;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .yellow {
+      color: #fdcc49;
+    }
+
+    .decoration {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn-success {
+      color: #fff;
+      background-color: #492bc4;
+      border-color: #492bc4;
+    }
+
+    .btn-success:hover {
+      color: #fff;
+      background-color: #492bc4;
+      border-color: #492bc4;
+    }
+
+    .decoration:hover {
+      text-decoration: none;
+       
+    }
+  </style>
   <body>
     <div class="header">
       <div
@@ -319,277 +428,156 @@
         </div>
       </nav>
     </div>
+<section>
+    <div class="container mt-5 px-5">
+      <div class="mb-4">
+        <h2>Confirm order and pay</h2>
+        <span
+          >please make the payment, after that you can enjoy all the features
+          and benefits.</span
+        >
+      </div>
 
-    <section class="h-100" style="background-color: #eee">
-      <div class="container h-100 py-5">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-10">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
-              <div>
-                <p class="mb-0">
-                  <span class="text-muted">Sort by:</span>
-                  <a href="#!" class="text-body"
-                    >price <i class="fas fa-angle-down mt-1"></i
-                  ></a>
-                </p>
-              </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card p-3" >
+            <h6 class="text-uppercase">Payment details</h6>
+            <div class="inputbox mt-3">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                required="required"
+              />
+              <span>Name on card</span>
             </div>
 
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div
-                  class="row d-flex justify-content-between align-items-center"
-                >
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                      class="img-fluid rounded-3"
-                      alt="Cotton T-shirt"
-                    />
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Basic T-shirt</p>
-                    <p>
-                      <span class="text-muted">Size: </span>M
-                      <span class="text-muted">Color: </span>Grey
-                    </p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      <i class="fas fa-minus"></i>
-                    </button>
-
-                    <input
-                      id="form1"
-                      min="0"
-                      name="quantity"
-                      value="2"
-                      type="number"
-                      class="form-control form-control-sm"
-                    />
-
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0">$499.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"
-                      ><i class="fas fa-trash fa-lg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div
-                  class="row d-flex justify-content-between align-items-center"
-                >
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                      class="img-fluid rounded-3"
-                      alt="Cotton T-shirt"
-                    />
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Basic T-shirt</p>
-                    <p>
-                      <span class="text-muted">Size: </span>M
-                      <span class="text-muted">Color: </span>Grey
-                    </p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      <i class="fas fa-minus"></i>
-                    </button>
-
-                    <input
-                      id="form1"
-                      min="0"
-                      name="quantity"
-                      value="2"
-                      type="number"
-                      class="form-control form-control-sm"
-                    />
-
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0">$499.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"
-                      ><i class="fas fa-trash fa-lg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div
-                  class="row d-flex justify-content-between align-items-center"
-                >
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                      class="img-fluid rounded-3"
-                      alt="Cotton T-shirt"
-                    />
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Basic T-shirt</p>
-                    <p>
-                      <span class="text-muted">Size: </span>M
-                      <span class="text-muted">Color: </span>Grey
-                    </p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      <i class="fas fa-minus"></i>
-                    </button>
-
-                    <input
-                      id="form1"
-                      min="0"
-                      name="quantity"
-                      value="2"
-                      type="number"
-                      class="form-control form-control-sm"
-                    />
-
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0">$499.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"
-                      ><i class="fas fa-trash fa-lg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div
-                  class="row d-flex justify-content-between align-items-center"
-                >
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                      class="img-fluid rounded-3"
-                      alt="Cotton T-shirt"
-                    />
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Basic T-shirt</p>
-                    <p>
-                      <span class="text-muted">Size: </span>M
-                      <span class="text-muted">Color: </span>Grey
-                    </p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      <i class="fas fa-minus"></i>
-                    </button>
-
-                    <input
-                      id="form1"
-                      min="0"
-                      name="quantity"
-                      value="2"
-                      type="number"
-                      class="form-control form-control-sm"
-                    />
-
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0">$499.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"
-                      ><i class="fas fa-trash fa-lg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-4">
-              <div class="card-body p-4 d-flex flex-row">
-                <div class="form-outline flex-fill">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="inputbox mt-3 mr-2">
                   <input
                     type="text"
-                    id="form1"
-                    class="form-control form-control-lg"
+                    name="name"
+                    class="form-control"
+                    required="required"
                   />
-                  <label class="form-label" for="form1">Discound code</label>
+                  <i class="fa fa-credit-card"></i> <span>Card Number</span>
                 </div>
-                <button
-                  type="button"
-                  class="btn btn-outline-warning btn-lg ms-3"
-                >
-                  Apply
-                </button>
+              </div>
+
+              <div class="col-md-6">
+                <div class="d-flex flex-row">
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>Expiry</span>
+                  </div>
+
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>CVV</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <button
-              type="button"
-              class="btn btn-primary btn-block btn-lg"
-              onclick="window.location.href='checkout.html'"
-            >
-              <div class="d-flex justify-content-between">
-                <span>Checkout</span>
-                <span>$26.48</span>
+            <div class="mt-4 mb-4">
+              <h6 class="text-uppercase">Billing Address</h6>
+
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>Street Address</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>City</span>
+                  </div>
+                </div>
               </div>
-            </button>
+
+              <div class="row mt-2">
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>State/Province</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="inputbox mt-3 mr-2">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      required="required"
+                    />
+                    <span>Zip code</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 mb-4 d-flex justify-content-between">
+            <a href="/Shopping-Cart.html"><span>Previous step</span></a>
+
+            <button class="btn btn-success px-3">Pay $840</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-blue p-3 text-white mb-3">
+            <span>You have to pay</span>
+            <div class="d-flex flex-row align-items-end mb-3">
+              <h1 class="mb-0 yellow">$549</h1>
+              <span>.99</span>
+            </div>
+
+            <span
+              >Enjoy all the features and perk after you complete the
+              payment</span
+            >
+            <a href="#" class="yellow decoration">Know all the features</a>
+
+            <div class="hightlight">
+              <span
+                >100% Guaranteed support and update for the next 5 years.</span
+              >
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
+</section>
     <div id="footer-placeholder"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
