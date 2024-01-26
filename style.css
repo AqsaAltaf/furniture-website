@@ -464,18 +464,18 @@ h5 {
 
 
 
-
+/* FOOTER CSS */
 .site-footer
 {
-  background-color:#26272b;
+  background-color:brown;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color: white;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color: white;
   opacity:0.5
 }
 .site-footer hr.small
@@ -488,15 +488,25 @@ h5 {
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  letter-spacing:2px;
+  text-decoration: underline;
 }
-.site-footer a
+.site-footer ul li a
 {
-  color:#737373;
+  color: black;
+  font-size: 16px;
 }
-.site-footer a:hover
+.site-footer p{
+  font-size: 16px;
+  color: black;
+}
+.site-footer p a{
+   text-decoration: underline;
+  color: black;
+}
+.site-footer ul li a:hover
 {
-  color:#3366cc;
+  color:white;
   text-decoration:none;
 }
 .footer-links
@@ -533,7 +543,9 @@ h5 {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color: white;
+  font-size: 20px;
+  color: brown;
 }
 .copyright-text
 {
