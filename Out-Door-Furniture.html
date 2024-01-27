@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Out Door Garden</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="Header.js"></script>
+    <script src="script.js"></script>
+    <style>
+      .furniture-categories .row div img{
+          border: 1px solid; 
+          border-radius: 100%;
+
+          width: 240px;
+          height: 240px;
+          margin-bottom: 10px;
+         
+      }
+      .furniture-categories .row .bed-room:hover{
+          box-shadow: none;
+          
+      }
+      .furniture-categories .row .bed-room{
+        width: 500px;
+      }
+  </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-panel">
+        <div class="right-panel">
+          <div style="display: flex">
+            <i class="fas fa-envelope mail-icon"></i>
+            <a href="https://mail.google.com/">onlinefurniture@gmail.com</a>
+          </div>
+          <span>|</span>
+
+          <div style="display: flex">
+            <i class="fas fa-phone phone-icon"></i>
+            <a href="">+92 312345678</a>
+          </div>
+        </div>
+      </div>
+      <div class="top-header">
+        <div class="logo">
+          <img src="Images/Logo.jpeg" alt="" />
+        </div>
+        <div class="search-bar">
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              style="height: 38px"
+            >
+              search
+            </button>
+          </div>
+        </div>
+
+        <!-- Show only on small and medium screens -->
+        <div
+          class="d-sm-flex d-md-flex d-lg-none text-center align-items-center"
+          style="justify-content: center; font-size: 30px; color: purple"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <!-- Show on large screens -->
+        <div class="account-wishlist-basket d-none d-lg-flex d-md-none">
+          <div>
+            <i class="fa fa-user-circle"></i>
+            <a href="Login.html">
+              <span>My Account</span>
+            </a>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-heart-circle-plus"></i>
+            <span>Wishlist</span>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-cart-shopping"></i>
+            <span>Shopping Cart</span>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="justify-content: space-between">
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars" style="font-size: 25px"></i>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown"
+            style="justify-content: space-between"
+          >
+            <ul
+              class="navbar-nav"
+              style="width: 100%; display: flex; justify-content: space-around"
+            >
+              <div class="d-lg-none" style="display: flex; gap: 2%">
+                <a href="Account.html">Sign Up</a>
+                <br />
+                <a href="Login.html">Login</a>
+              </div>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="Home.html"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Room Furniture
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Top Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Deals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Policy
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Offices
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Item 1</a></li>
+                  <li><a class="dropdown-item" href="#"> Item 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Item 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="furniture-categories" style="margin-bottom: 10%;">
+        <div class="row" style="width: 100%; padding: 5% 5%">
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://i.pinimg.com/736x/f4/fc/a7/f4fca727522ba655671d28f31ae303e2.jpg"
+              alt=""
+             />
+            <h4>Beds</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEx9YRksqKRM256Ti0On4eLd5ymlTPAWtzw&usqp=CAU"
+              alt=""
+            />
+            <h4>Wardrobes</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://artdeviefurniture.com/wp-content/uploads/2023/06/20220207_223535.jpg"
+              alt=""
+            />
+            <h4>Sofas</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrHceJfQeScjoL7wkM-TcqEQDgIEu-WRulw&usqp=CAU"
+              alt=""
+            />
+            <h4>Side Tables</h4>
+          </div>
+        </div>
+        <div class="row" style="width: 100%; padding: 0% 5%">
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://renovate.pk/wp-content/uploads/2023/02/1127.jpg"
+              alt=""
+            />
+            <h4>Dressing Table</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
+            <img
+              src="https://malikfurnitures.com/wp-content/uploads/2021/10/PicsArt_09-29-08.39.13.jpg"
+              alt=""
+            />
+            <h4>Chair</h4>
+          </div>
+          <!-- <div class="col-sm-12 col-md-6 col-lg-3">
+            <img
+              src="https://homedone.co.uk/media/wysiwyg/Group_385.jpg.webp"
+              alt=""
+            />
+            <h4>Office Furniture</h4>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <img
+              src="https://homedone.co.uk/media/wysiwyg/Group_385.jpg.webp"
+              alt=""
+            />
+            <h4>Benches</h4>
+          </div> -->
+        </div>
+      </section>
+    <div id="footer-placeholder"></div>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        fetch("Footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+        });
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,7 +1,8 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Cinzel';
+   
 }
 
 .container-fluid {
@@ -12,7 +13,7 @@
 }
 
 .header-panel {
-  background-color: brown;
+  background-color: rgb(74, 146, 175);
   width: 100%;
   height: 40px;
 }
@@ -22,41 +23,40 @@
   justify-content: end;
   align-items: center;
   text-decoration: none;
-   
   padding-left: 5%;
   width: 100%;
   height: 100%;
 }
 .right-panel a {
-  color: white;
+  color:  black;
   align-items: center;
 }
 .nav-link {
-  color: white;
+  color: black;
 }
 button .navbar-toggler:hover{
   border: none;
   text-decoration: none;
 }
 .dropdown-item:hover {
-  background-color: brown !important;
+  background-color: skyblue !important;
 }
 
 .mail-icon {
   width: 2px;
   font-size: 18px;
-  color: white;
+  color: black;
   margin-top: 2px;
 }
 .phone-icon {
   width: 2px;
   font-size: px;
-  color: white;
+  color: black;
   margin-top: 2px;
 }
 /* divider between email and phone no. at the top  */
 .right-panel span {
-  color: white;
+  color: black;
   margin-right: 2%;
   margin-left: 1%;
   width: 1px;
@@ -74,13 +74,21 @@ button .navbar-toggler:hover{
   margin-top: 15px;
   align-items: center;
 }
-.logo {
+.logo-image{
   width: 15%;
-  min-width: 110px;
+  height: 130px;
+  background-image: url("Images/Logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 10%;
+  /* margin-left: 10px; */
 }
 .logo img {
   width: 100%;
   height: 100px;
+  
 }
 .search-bar {
   width: 70%;
@@ -97,13 +105,14 @@ button .navbar-toggler:hover{
 }
 .account-wishlist-basket i {
   width: 2px;
-  font-size: 20px;
-  color: brown;
+  font-size: 22px;
+  color: skyblue;
 }
 .account-wishlist-basket span {
   margin-left: 30px;
   color: black;
   cursor: pointer;
+  font-size: 18px;
 }
 .account-wishlist-basket span:hover {
   text-decoration: none;
@@ -129,15 +138,16 @@ button .navbar-toggler:hover{
   margin-top: 10px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 h1 {
-  /* margin-top: 15px;
-  margin-left: 15px; */
-  padding: 15px;
-  font-family: 'Merriweather';
-  color: blue;
+ 
+  padding: 5px;
+  background-color: (74, 146, 175);
+  color: black;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  background: #99cae0;
 }
 
 .furniture-categories {
@@ -217,12 +227,14 @@ h1 {
   align-items: start;
   justify-content: space-between;
 }
+
+
 .price .new-price span {
   color: rgb(78, 177, 78);
   font-size: 20px;
 }
 .price .old-price span {
-  color: brown;
+  color: skyblue;
   font-size: 14px;
   text-decoration: line-through;
   align-items: end;
@@ -393,6 +405,10 @@ h2 {
   height: 100%;
   text-wrap:balance;
 }
+.rooms-furniture .container-fluid .row .room-type .room-images{
+  width: 70%;
+  height: 100%;
+}
 .rooms-furniture .container-fluid .row .room-type .room-images img {
   width: 100%;
   height: 100%;
@@ -443,9 +459,7 @@ h5 {
   display: block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-.footer {
-  width: 100%;
-}
+ 
 .login-form {
   width: 100%;
   display: flex;
@@ -453,21 +467,17 @@ h5 {
   border: 1px solid;
   margin: 12% 0px;
   padding: 15px;
+  background-color: skyblue;
 }
 .login-form label {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
-
 /* FOOTER CSS */
 .site-footer
 {
-  background-color:brown;
+  background-color:skyblue;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -475,7 +485,7 @@ h5 {
 }
 .site-footer hr
 {
-  border-top-color: white;
+  border-top-color: black;
   opacity:0.5
 }
 .site-footer hr.small
@@ -484,12 +494,12 @@ h5 {
 }
 .site-footer h6
 {
-  color:#fff;
-  font-size:16px;
+  color: blue;
+  font-size:18px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px;
   text-decoration: underline;
+  font-weight: bold;
 }
 .site-footer ul li a
 {
@@ -543,9 +553,9 @@ h5 {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color: white;
+  background-color:  black;
   font-size: 20px;
-  color: brown;
+  color: skyblue;
 }
 .copyright-text
 {
