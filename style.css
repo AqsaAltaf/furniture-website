@@ -393,11 +393,36 @@ h2 {
   background-color: rgb(243, 248, 248);
   cursor: pointer;
 }
-.rooms-furniture .container-fluid .row .room-type .room-details {
-  width: 45%;
+.rooms-furniture .container-fluid .row .room-type .room-image{
+   
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+   
+  width: 100%;
   height: 100%;
-  text-wrap:balance;
 }
+
+.rooms-furniture .container-fluid .row .room-type .room-image .room-image-detail{
+    
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.rooms-furniture .container-fluid .row .room-type .room-image .room-image-detail a h4{
+
+  color: white;
+  font-size: 28px;
+}
+ 
+
+
 .rooms-furniture .container-fluid .row .room-type .room-images{
   width: 70%;
   height: 100%;
