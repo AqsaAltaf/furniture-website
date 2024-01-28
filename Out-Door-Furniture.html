@@ -105,7 +105,7 @@
         <div class="logo">
           <img src="Images/Logo.jpg" alt="Logo" />
         </div>
-         
+
         <div
           class="input-group search-bar d-none d-sm-none d-lg-flex"
           style="display: flex"
@@ -138,7 +138,7 @@
           </div>
           <div class="text-center">
             <i class="fa fa-heart-circle-plus"></i>
-            <span>Wishlist</span>
+            <a href="wishlist.html"><span>Wishlist</span></a>
           </div>
           <div class="text-center">
             <i class="fa fa-cart-shopping"></i>
@@ -170,15 +170,15 @@
           class="container-fluid"
           style="justify-content: space-between; background-color: skyblue"
         >
-          <i
+           <i
             class="fa fa-cart-shopping d-flex d-sm-flex d-lg-none"
             style="
               font-size: 25px;
-              color: white;
-              margin-left: 75%;
+              color: black;
+              margin-left: 75% !important;
               cursor: pointer;
             "
-            href=""
+             onclick="window.location.href='Shopping-Cart.html'"
           ></i>
           <button
             class="navbar-toggler"
@@ -188,7 +188,7 @@
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style="color: white; margin-left: 0px; border: none"
+            style="color: black; margin-left: 0px;"
           >
             <i class="fa fa-bars" style="font-size: 25px"></i>
           </button>
@@ -203,9 +203,9 @@
                 class="d-lg-none account-links"
                 style="display: flex; gap: 2%"
               >
-                <a href="Account.html">Sign Up</a>
+                <a href="Account.html" style="color: black;">Sign Up</a>
                 <br />
-                <a href="Login.html">Login</a>
+                <a href="Login.html" style="color: black;">Login</a>
               </div>
               <li class="nav-item">
                 <a

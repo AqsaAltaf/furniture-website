@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
   <head>
-    <title>Living Room Furniture</title>
+    <title>Your Wishlist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
@@ -19,11 +18,7 @@
     <link
       href="https://fonts.googleapis.com/css?family= Cinzel"
       rel="stylesheet"
-    />    <link rel="stylesheet" href="style.css" />
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="Header.js"></script>
-    <script src="script.js"></script>
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,28 +27,28 @@
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
     />
-     
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-      .furniture-categories .row div img{
-          border: 1px solid; 
-          border-radius: 100%;
-
-          width: 240px;
-          height: 240px;
-          margin-bottom: 10px;
-         
-      }
-      .furniture-categories .row .bed-room:hover{
-          box-shadow: none;
-          
-      }
-      .furniture-categories .row .bed-room{
-        width: 500px;
-      }
-  </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <script src="Header.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    .h-100 spam,p,h5,label{
+      color: black;
+    }
+     .fa-plus,.fa-minus{
+      color: blue;
+     }
+     .card.rounded-3.mb-4:hover{
+      background-color: skyblue;
+     }
 
+     .card.mb-4:hover{
+      background-color: skyblue;
+     }
+  </style>
   <body>
     <div class="header">
       <div
@@ -347,77 +342,198 @@
         </div>
       </nav>
     </div>
-    <section class="furniture-categories" style="margin-bottom: 10%;">
-        <div class="row" style="width: 100%; padding: 5% 5%">
-          
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://www.furnishnc.com/blog/wp-content/uploads/sites/56/2021/01/Essential-Living-Room-Items-for-Raleigh.jpg"
-              alt=""
-            />
-            <h4>Sofa</h4>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://malikfurnitures.com/wp-content/uploads/2020/01/Lcd-Rack-133.jpg"
-              alt=""
-             />
-            <h4>Racks</h4>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://artdeviefurniture.com/wp-content/uploads/2023/06/20220207_223535.jpg"
-              alt=""
-            />
-            <h4>Sofas</h4>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrHceJfQeScjoL7wkM-TcqEQDgIEu-WRulw&usqp=CAU"
-              alt=""
-            />
-            <h4>Side Tables</h4>
+
+    <section class="h-100" style="background-color: #eee">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0 text-black">Your Wishlist Items</h3>
+              <div>
+                <p class="mb-0">
+                  <span class="text-muted">Sort by:</span>
+                  <a href="#!" class="text-body"
+                    >price <i class="fas fa-angle-down mt-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
+                    <p>
+                      <span class="text-muted">Size: </span>M
+                      <span class="text-muted">Color: </span>Grey
+                      <br>
+                      <span>In Stock</span>
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+                        onclick="windows.location.href='Shopping-Cart.html'"
+                    >
+                       Add to Cart
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$499.00</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div
+                    class="row d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                        class="img-fluid rounded-3"
+                        alt="Cotton T-shirt"
+                      />
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
+                      <p>
+                        <span class="text-muted">Size: </span>M
+                        <span class="text-muted">Color: </span>Grey
+                        <br>
+                        <span>In Stock</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+                          onclick="windows.location.href='Shopping-Cart.html'"
+                      >
+                         Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">$499.00</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"
+                        ><i class="fas fa-trash fa-lg"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div
+                    class="row d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                        class="img-fluid rounded-3"
+                        alt="Cotton T-shirt"
+                      />
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
+                      <p>
+                        <span class="text-muted">Size: </span>M
+                        <span class="text-muted">Color: </span>Grey
+                        <br>
+                        <span>In Stock</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+                          onclick="windows.location.href='Shopping-Cart.html'"
+                      >
+                         Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">$499.00</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"
+                        ><i class="fas fa-trash fa-lg"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div
+                    class="row d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                        class="img-fluid rounded-3"
+                        alt="Cotton T-shirt"
+                      />
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
+                      <p>
+                        <span class="text-muted">Size: </span>M
+                        <span class="text-muted">Color: </span>Grey
+                        <br>
+                        <span>In Stock</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+                          onclick="windows.location.href='Shopping-Cart.html'"
+                      >
+                         Add to Cart
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">$499.00</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"
+                        ><i class="fas fa-trash fa-lg"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="Home.html" style="display: flex; justify-content: end; font-size: 18px;">Continue Shopping</a>
+            
           </div>
         </div>
-        <div class="row" style="width: 100%; padding: 0% 5%">
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://renovate.pk/wp-content/uploads/2023/02/1127.jpg"
-              alt=""
-            />
-            <h4>Dressing Table</h4>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 bed-room">
-            <img
-              src="https://malikfurnitures.com/wp-content/uploads/2021/10/PicsArt_09-29-08.39.13.jpg"
-              alt=""
-            />
-            <h4>Chair</h4>
-          </div>
-          <!-- <div class="col-sm-12 col-md-6 col-lg-3">
-            <img
-              src="https://homedone.co.uk/media/wysiwyg/Group_385.jpg.webp"
-              alt=""
-            />
-            <h4>Office Furniture</h4>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <img
-              src="https://homedone.co.uk/media/wysiwyg/Group_385.jpg.webp"
-              alt=""
-            />
-            <h4>Benches</h4>
-          </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
+
     <div id="footer-placeholder"></div>
     <script>
-       document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         fetch("Footer.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("footer-placeholder").innerHTML = html;
-        });
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("footer-placeholder").innerHTML = html;
+          });
       });
     </script>
 

@@ -98,6 +98,14 @@ button .navbar-toggler:hover{
   align-items: center;
   justify-content: space-evenly;
 }
+
+ .account-wishlist-basket .account-dropdown .account-options {
+  display: none;
+}
+
+.account-dropdown:hover .account-options {
+  display: block;
+}
 .account-wishlist-basket i {
   width: 2px;
   font-size: 22px;
@@ -466,7 +474,7 @@ h5 {
 .furniture-deals .sale {
   width: 100%;
   height: 100%;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .furniture-deals .sale img {
   width: 90%;
