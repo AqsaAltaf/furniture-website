@@ -421,8 +421,6 @@ h2 {
   font-size: 28px;
 }
  
-
-
 .rooms-furniture .container-fluid .row .room-type .room-images{
   width: 70%;
   height: 100%;
@@ -466,6 +464,7 @@ h5 {
 .furniture-deals .sale {
   width: 100%;
   height: 100%;
+  padding-left: 15px;
 }
 .furniture-deals .sale img {
   width: 90%;
