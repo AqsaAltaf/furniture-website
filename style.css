@@ -74,17 +74,9 @@ button .navbar-toggler:hover{
   margin-top: 15px;
   align-items: center;
 }
-.logo-image{
-  width: 15%;
-  height: 130px;
-  min-width: 100px;
-  background-image: url("Images/Logo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* padding-left: 10%; */
-  margin-left: 10px;
+.logo{
+  width: 15%; 
+  min-width: 110px;
 }
 .logo img {
   width: 100%;
