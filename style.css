@@ -3,10 +3,6 @@
   margin: 0px;
   font-family: 'Cinzel';
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-}
-
 .container-fluid {
   width: 100%;
   box-sizing: border-box;
@@ -152,7 +148,7 @@ h1 {
   font-weight: 400;
   background: #99cae0;
 }
-
+/* Furniture categories  */
 .furniture-categories {
   width: 100%;
   display: flex;
@@ -177,6 +173,7 @@ h1 {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Adjust the values as needed */
 }
+/* Top Products */
 .top-products {
   width: 100%;
   padding: 5px; 
@@ -258,30 +255,6 @@ h1 {
   white-space: nowrap;
 }
 
-/* Product deatils cards css copy from google */
- 
-/* :root {
-  --orange: #fd9940;
-  --darkorange: #dd7d25;
-  --platinum: #e5e5e5;
-  --black: #2b2d42;
-  --white: #fff;
-  --thumb: #edf2f4;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font: 16px / 24px "Rubik", sans-serif;
-  color: var(--black);
- 
-  margin: 50px 0;
-} */
-
 .container {
   max-width: 1400px;
   padding: 0 15px;
@@ -310,7 +283,6 @@ h2 {
   flex-direction: column;
   padding: 5px;
   background:  white;
-   
   box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
   scroll-snap-align: start;
   transition: all 0.2s;
@@ -386,7 +358,7 @@ h2 {
   }
 }
 
-
+/* Specific Room furniture */
 
 .rooms-furniture {
   width: 100%;
@@ -442,6 +414,8 @@ h2 {
 h4 {
   font-weight: bold;
 }
+
+/* Furniture Deals */
 .furniture-deals {
   width: 100%;
   display: flex;
@@ -521,7 +495,7 @@ h5 {
 }
 .site-footer h6
 {
-  color: blue;
+  color: black;
   font-size:18px;
   text-transform:uppercase;
   margin-top:5px;
