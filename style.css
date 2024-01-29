@@ -234,7 +234,7 @@ h1 {
   font-size: 20px;
 }
 .price .old-price span {
-  color: skyblue;
+  color: red;
   font-size: 14px;
   text-decoration: line-through;
   align-items: end;
