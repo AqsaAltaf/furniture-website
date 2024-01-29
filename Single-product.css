@@ -35,6 +35,7 @@
     align-items: center;
     border: 1px solid;
     width: fit-content;
+    border-color: blue;
   }
 
   .quantity-input {
@@ -51,18 +52,23 @@
     padding: 0px 10px;
     border: none;
     background-color: lightgray;
+    color: blue;
   }
   .quantity-button:hover {
-    background-color: grey;
+    background-color: skyblue;
   }
   .cart-buy-button .row{
     width: 100%;
     gap: 2%;
     padding: 0px 10px;
+    
   }
   .cart-button {
     width:fit-content;
-    height: 30px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
   }
   .buy-button {
     width: fit-content;
