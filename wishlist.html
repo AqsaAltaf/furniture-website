@@ -33,22 +33,28 @@
     <script src="script.js"></script>
     <script src="Header.js"></script>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <style>
-    .h-100 spam,p,h5,label{
-      color: black;
-    }
-     .fa-plus,.fa-minus{
-      color: blue;
-     }
-     .card.rounded-3.mb-4:hover{
-      background-color: skyblue;
-     }
 
-     .card.mb-4:hover{
-      background-color: skyblue;
-     }
-  </style>
+    <style>
+      .h-100 spam,
+      p,
+      h5,
+      label {
+        color: black;
+      }
+      .fa-plus,
+      .fa-minus {
+        color: blue;
+      }
+      .card.rounded-3.mb-4:hover {
+        background-color: skyblue;
+      }
+
+      .card.mb-4:hover {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+
   <body>
     <div class="header">
       <div
@@ -143,29 +149,29 @@
         </div>
         <!-- Show only on small and medium screens -->
         <div
-        class="d-sm-flex d-md-flex d-lg-none"
-        style="
-          display: flex;
-          font-size: 20px;
-          color: skyblue;
-          padding-right: 0%;
-          padding-left: 50%;
-          width: 5px;
-          gap: 5px;
-        "
-      >
-        <i class="fas fa-search"></i>
-        <a
-          href="wishlist.html"
+          class="d-sm-flex d-md-flex d-lg-none"
           style="
+            display: flex;
+            font-size: 20px;
             color: skyblue;
-            text-decoration: none;
-            font-size: 24px;
-            margin-top: -8px;
+            padding-right: 0%;
+            padding-left: 50%;
+            width: 5px;
+            gap: 5px;
           "
-          ><i class="fa fa-heart-circle-plus"></i
-        ></a>
-      </div>
+        >
+          <i class="fas fa-search"></i>
+          <a
+            href="wishlist.html"
+            style="
+              color: skyblue;
+              text-decoration: none;
+              font-size: 24px;
+              margin-top: -8px;
+            "
+            ><i class="fa fa-heart-circle-plus"></i
+          ></a>
+        </div>
       </div>
       <nav
         class="container-fluid navbar navbar-expand-lg"
@@ -175,7 +181,7 @@
           class="container-fluid"
           style="justify-content: space-between; background-color: skyblue"
         >
-           <i
+          <i
             class="fa fa-cart-shopping d-flex d-sm-flex d-lg-none"
             style="
               font-size: 25px;
@@ -183,7 +189,7 @@
               margin-left: 75% !important;
               cursor: pointer;
             "
-             onclick="window.location.href='Shopping-Cart.html'"
+            onclick="window.location.href='Shopping-Cart.html'"
           ></i>
           <button
             class="navbar-toggler"
@@ -193,7 +199,7 @@
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            style="color: black; margin-left: 0px;"
+            style="color: black; margin-left: 0px"
           >
             <i class="fa fa-bars" style="font-size: 25px"></i>
           </button>
@@ -204,14 +210,14 @@
             style="justify-content: space-between"
           >
             <ul class="navbar-nav">
-              <div
+              <li
                 class="d-lg-none account-links"
                 style="display: flex; gap: 2%"
               >
-                <a href="Account.html" style="color: black;">Sign Up</a>
+                <a href="Account.html" style="color: black">Sign Up</a>
                 <br />
-                <a href="Login.html" style="color: black;">Login</a>
-              </div>
+                <a href="Login.html" style="color: black">Login</a>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -383,19 +389,25 @@
                     />
                   </div>
                   <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
+                    <p class="lead fw-normal mb-2">Wood Baby Bed</p>
                     <p>
                       <span class="text-muted">Size: </span>M
                       <span class="text-muted">Color: </span>Grey
-                      <br>
+                      <br />
                       <span>In Stock</span>
                     </p>
                   </div>
                   <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
-                    onclick="window.location.href='Shopping-Cart.html'"
+                    <button
+                      style="
+                        padding: 5px;
+                        border-color: blue;
+                        font-size: 18px;
+                        border-radius: 0.5rem;
+                      "
+                      onclick="window.location.href='Shopping-Cart.html'"
                     >
-                       Add to Cart
+                      Add to Cart
                     </button>
                   </div>
                   <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
@@ -411,127 +423,148 @@
             </div>
 
             <div class="card rounded-3 mb-4">
-                <div class="card-body p-4">
-                  <div
-                    class="row d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
-                        class="img-fluid rounded-3"
-                        alt="Cotton T-shirt"
-                      />
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
-                      <p>
-                        <span class="text-muted">Size: </span>M
-                        <span class="text-muted">Color: </span>Grey
-                        <br>
-                        <span>In Stock</span>
-                      </p>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Wood Baby Bed</p>
+                    <p>
+                      <span class="text-muted">Size: </span>M
+                      <span class="text-muted">Color: </span>Grey
+                      <br />
+                      <span>In Stock</span>
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      style="
+                        padding: 5px;
+                        border-color: blue;
+                        font-size: 18px;
+                        border-radius: 0.5rem;
+                      "
                       onclick="window.location.href='Shopping-Cart.html'"
-                      >
-                         Add to Cart
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 class="mb-0">$499.00</h5>
-                    </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-danger"
-                        ><i class="fas fa-trash fa-lg"></i
-                      ></a>
-                    </div>
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$499.00</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="card rounded-3 mb-4">
-                <div class="card-body p-4">
-                  <div
-                    class="row d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
-                        class="img-fluid rounded-3"
-                        alt="Cotton T-shirt"
-                      />
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
-                      <p>
-                        <span class="text-muted">Size: </span>M
-                        <span class="text-muted">Color: </span>Grey
-                        <br>
-                        <span>In Stock</span>
-                      </p>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Wood Baby Bed</p>
+                    <p>
+                      <span class="text-muted">Size: </span>M
+                      <span class="text-muted">Color: </span>Grey
+                      <br />
+                      <span>In Stock</span>
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      style="
+                        padding: 5px;
+                        border-color: blue;
+                        font-size: 18px;
+                        border-radius: 0.5rem;
+                      "
                       onclick="window.location.href='Shopping-Cart.html'"
-                      >
-                         Add to Cart
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 class="mb-0">$499.00</h5>
-                    </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-danger"
-                        ><i class="fas fa-trash fa-lg"></i
-                      ></a>
-                    </div>
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$499.00</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="card rounded-3 mb-4">
-                <div class="card-body p-4">
-                  <div
-                    class="row d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
-                        class="img-fluid rounded-3"
-                        alt="Cotton T-shirt"
-                      />
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                      <p class="lead fw-normal mb-2"> Wood Baby Bed</p>
-                      <p>
-                        <span class="text-muted">Size: </span>M
-                        <span class="text-muted">Color: </span>Grey
-                        <br>
-                        <span>In Stock</span>
-                      </p>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button style="padding: 5px; border-color: blue; font-size: 18px; border-radius: 0.5rem;"
+            <div class="card rounded-3 mb-4">
+              <div class="card-body p-4">
+                <div
+                  class="row d-flex justify-content-between align-items-center"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img
+                      src="https://api.fantasticfurniture.com.au/medias/Product-Detail-Spartacus-HOUBEDSGLOOOTIMRUO-PD-7-CONTAINER-original-FantasticFurniture-WF?context=bWFzdGVyfGltYWdlc3wxMDMzODR8aW1hZ2UvanBlZ3xoYzgvaGEwLzk5OTg0MjMwOTczNzQvUHJvZHVjdC1EZXRhaWwtU3BhcnRhY3VzX0hPVUJFRFNHTE9PT1RJTVJVT19QRF83X0NPTlRBSU5FUl9vcmlnaW5hbF9GYW50YXN0aWNGdXJuaXR1cmUtV0Z8Yjg4MDc5M2VjNjIwMmI1YWQ4NGNkOWE2ZGM4YmY0NGUyZGFkY2E4MTY3ZmE2MTRiMzIyMTZhNWE5MzNjZmVlYQ"
+                      class="img-fluid rounded-3"
+                      alt="Cotton T-shirt"
+                    />
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">Wood Baby Bed</p>
+                    <p>
+                      <span class="text-muted">Size: </span>M
+                      <span class="text-muted">Color: </span>Grey
+                      <br />
+                      <span>In Stock</span>
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button
+                      style="
+                        padding: 5px;
+                        border-color: blue;
+                        font-size: 18px;
+                        border-radius: 0.5rem;
+                      "
                       onclick="window.location.href='Shopping-Cart.html'"
-                      >
-                         Add to Cart
-                      </button>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 class="mb-0">$499.00</h5>
-                    </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" class="text-danger"
-                        ><i class="fas fa-trash fa-lg"></i
-                      ></a>
-                    </div>
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                    <h5 class="mb-0">$499.00</h5>
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="#!" class="text-danger"
+                      ><i class="fas fa-trash fa-lg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <a href="Home.html" style="display: flex; justify-content: end; font-size: 18px;">Continue Shopping</a>
-            
+            <a
+              href="Home.html"
+              style="display: flex; justify-content: end; font-size: 18px"
+              >Continue Shopping</a
+            >
           </div>
         </div>
       </div>
